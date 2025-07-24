@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.get('/test', (req, res) => {
+app.post('/test', (req, res) => {
     console.log(req.body);
 });
 
